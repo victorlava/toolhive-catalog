@@ -1,0 +1,120 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "io.github.stacklok": {
+        "https://mcp.send4.ai/mcp": {
+          "custom_metadata": {
+            "author": "Send4",
+            "homepage": "https://send4.ai/support/ai-assistant-tools/",
+            "license": "Proprietary"
+          },
+          "metadata": {
+            "last_updated": "2026-11-06T09:00:00Z"
+          },
+          "overview": "## Send4 MCP Server\n\nThe official Send4 MCP server connects an AI assistant to a Send4 workspace: AI SMS and email for sales and support teams. The assistant reads and changes the workspace's flows, campaigns, conversations, leads and meetings as the signed-in person, with that person's role and permissions.\n\nTypical workflows: ask why a lead's conversation went quiet and read the thread; duplicate a live flow, change the copy, rehearse it and switch it on; build and launch an SMS or email campaign; book or move a meeting; report performance, drop-off and campaign results. Launching a campaign, switching a flow on or texting a typed number is a read-only `preview_*` tool that returns a summary for the person to confirm, then the write.\n\nSign-in is OAuth 2.1 with dynamic client registration and PKCE. A workspace admin switches AI assistants on, and each kind of change has its own switch, off by default. Changes are recorded in the workspace audit log. Requires a Send4 workspace on a plan or a started trial.",
+          "status": "Active",
+          "tags": [
+            "remote",
+            "sms",
+            "email",
+            "sales",
+            "support",
+            "campaigns",
+            "crm"
+          ],
+          "tier": "Official",
+          "tools": [
+            "add_campaign_recipients",
+            "assign_conversation",
+            "book_meeting",
+            "cancel_campaign",
+            "check_flow",
+            "compare_card_text",
+            "create_campaign",
+            "create_flow",
+            "create_lead",
+            "create_mailbox",
+            "describe_card_type",
+            "duplicate_flow",
+            "edit_flow",
+            "explain_conversation",
+            "find_meeting_times",
+            "get_account_usage",
+            "get_campaign_report",
+            "get_context",
+            "get_drop_off",
+            "get_flow_building_guide",
+            "get_flow_health",
+            "get_flow_map",
+            "get_mailbox_setup",
+            "get_message_usage",
+            "get_performance",
+            "invite_member",
+            "launch_campaign",
+            "list_campaigns",
+            "list_card_types",
+            "list_channels",
+            "list_conversations",
+            "list_flow_runs",
+            "list_flow_templates",
+            "list_flows",
+            "list_leads",
+            "list_meetings",
+            "list_members",
+            "list_personas",
+            "mark_lead_opted_out",
+            "pause_campaign",
+            "preview_added_recipients",
+            "preview_campaign_audience",
+            "preview_campaign_launch",
+            "preview_flow_status",
+            "preview_member_invite",
+            "preview_new_conversation",
+            "read_campaign",
+            "read_conversation",
+            "read_flow",
+            "read_rehearsal",
+            "rehearse_flow",
+            "resend_invitation",
+            "resume_ai",
+            "resume_campaign",
+            "save_persona",
+            "send_message",
+            "set_flow_status",
+            "start_conversation",
+            "suggest_card_change",
+            "tag_leads",
+            "take_over_conversation",
+            "update_campaign",
+            "update_meeting",
+            "update_member"
+          ]
+        }
+      }
+    }
+  },
+  "description": "Send4's official remote MCP server for AI SMS and email flows, campaigns, conversations and meetings",
+  "icons": [
+    {
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ],
+      "src": "https://raw.githubusercontent.com/stacklok/toolhive-catalog/main/registries/toolhive/servers/send4-remote/icon.svg"
+    }
+  ],
+  "name": "io.github.stacklok/send4-remote",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.send4.ai/mcp"
+    }
+  ],
+  "repository": {
+    "source": "github",
+    "url": "https://github.com/send4ai/send4-mcp-server"
+  },
+  "title": "Send4 (Remote)",
+  "version": "1.0.0"
+}
